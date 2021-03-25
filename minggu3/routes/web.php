@@ -15,8 +15,12 @@ use App\Http\Controllers\ManagementUserController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get("/", function () {
+    return view("welcome");
+});
 
 Route::resource('user', ManagementUserController::class);
+
+// Route::get("/home", function () {
+//     return view("home");
+// });
